@@ -1,7 +1,3 @@
-/*
- * Programma con esempi di lettura e scrittura file di testo
- */
-
  import java.io.File;
  import java.util.Scanner;
  import java.io.PrintWriter;
@@ -21,10 +17,6 @@
          } catch (IOException e) {
              e.printStackTrace();
          }
- 
- 
- 
-         
  
      }
  }
