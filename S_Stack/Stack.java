@@ -27,7 +27,7 @@ public class Stack<T> {
     }
     
     public String toString() {
-        String s = "Contenuto della pila:\n";
+        String s = "argomenti pila:\n";
         for (int i=0; i<list.size(); i++) {
             s += list.get(i) + "\n";
         }
