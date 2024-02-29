@@ -28,4 +28,12 @@ public class Lista {
         s += "end!";
         return s;
     }
+    public void addHead(Nodo n){
+        if(isEmpty()) {
+            radice=n;
+        }else{
+            n.setSuccessivo(radice);
+            radice=n;
+        }
+    }
 }
