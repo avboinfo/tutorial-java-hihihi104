@@ -1,4 +1,4 @@
-//package L_Lista;
+//package L_lista;
 
 public class Nodo {
 
