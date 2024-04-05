@@ -13,4 +13,8 @@ public class ProntoSoccorso {
         ps.addTail(new Paziente("Maria","rossi","yellow"));
         ps.addTail(new Paziente("Riccardina","gamberetto","red"));
     }
+    @Override
+    public String toString() {
+        return "ProntoSoccorso [ps=" + ps + "]";
+    }
 }

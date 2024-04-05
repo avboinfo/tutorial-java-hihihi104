@@ -1,16 +1,26 @@
+package opsedale;
 public class Lista<T> {
 
     Nodo<T> root;
 
-    public Lista <T>() {
+    public Lista() {
         this.root = null;
     }
-
-    public void addTail(T v ) {
-        addTail( new Nodo<T>( v ) );
+    public boolean isEmpty(){
+        return root=null;
     }
 
-    public void addTail( Nodo<T> n ) {
+    public void addHead( T v){
+        Nodo<T> n= new Nodo<>(v);
+        if(isEmpty()) root=n;
+        else{
+            n.setSuccessivo(root);
+            root = n;
+        }
+    }
+
+    public void addTail( T v ) {
+        Nodo<T> n = new Nodo<>(v);
         if (root==null) {
             root = n;
         } else {
